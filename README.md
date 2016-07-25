@@ -1,1 +1,1 @@
-# random-quote-gen
+# quote-gen
