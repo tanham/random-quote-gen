@@ -1,17 +1,30 @@
+//stores quotes
 var quote = [] 
-quote [0] = '"I don’t want to earn my living; I want to live."--unknown';
-quote [1] = '"Live for yourself."--unknown';
-quote [2] = '"Work hard. Dream big."--unknown';
-quote [3] = '"Life is short. Live passionately."--unknown';
+quote [0] = '"Curiosity did not kill the cat, it created the mousetrap"--unknown';
+quote [1] = '"I have no special talents. I am only passionately curious.” --Albert Einstein';
+quote [2] = '"Life isn’t about finding the answers, it’s about asking the questions."--Brian Grazer';
+quote [3] = '"Possibility of having a dream come true that makes life interesting" --Paulo Cohelo';
 quote [4] = '"Life is a one time offer, use it well."--unknown';
-quote [6] = '"So it goes."--unknown';
-quote [5] = '"The trouble is you think you have time."--unknown';
-quote [6] = '"Whatever you are, be a good one."--unknown';
-quote [7] = '"Everything happens for a reason."--unknown';
-quote [8] = '"Be the change you wish to see in the world."--unknown';
-quote [9] = '"Love the life you live, and live the life you love."--unknown';
+quote [6] = '"Do not be afraid to fail. Be afraid not to try."--unknown';
+quote [5] = '"In a maize field choose to be a flower. In a garden of daises choose to be a rose."--Matshona Dhliwayo';
+quote [6] = '"Remember to celebrate milestones as you prepare for the road ahead." -- Nelson Mandela';
+quote [7] = '"If you set your goals ridiculously high and fail, you will fail above everyone elses success."-—James Cameron';
+quote [8] = '"Live as if you were to die tomorrow. Learn as if you were to live forever. --mahatma gandhi';
+quote [9] = '"People Who Are Crazy Enough To Think They Can Change The World, Are The Ones Who Do.”--Rob Siltanen';
 
+//returns random integer 
 function myQuote() {
-  var randomQuote = Math.floor(Math.random()*(quote.length));
+  var randomQuote = Math.floor(Math.random() * (quote.length));
+  //assigns random quote to html id 'my-quote'
   document.getElementById('my-quote').innerHTML = quote[randomQuote];
+}
+
+//change color on every click 
+var backgroundColors = ['#FF7F50', '#00BFFF', '#FFD700', '#CD5C5C', '#F0E68C', '#ADD8E6', '#90EE90', '#87CEFA','#BC8F8F','#C0C0C0']; 
+
+function changeBackground() {
+//returns random integer
+  var index = Math.floor(Math.random() * (backgroundColors.length));
+//change color on click  
+  document.getElementById('color-change').style.backgroundColor = backgroundColors[index];
 }
