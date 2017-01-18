@@ -1,21 +1,26 @@
 body { 
-  background-color: #D7FFF1 /*#E0E3DA*/;
-  color: #566270;
-  font-family: "Courier New", "Monospace";
+  /*background-color: #D7FFF1 #E0E3DA*/;
+  font-family: 'Helvetica';
 }
 
 
 .container { 
-  text-align: center;
+  margin: 0 auto;
   margin-top: 100px;
+  text-align: center;
+
 }
 
 .well {
-  margin: auto;
-  width: 70%;
-  height: 400px;
-  border-radius: 10px;
+  margin: 0 auto;
+  width: 400px;
+  height: 450px;
+  border-radius: 3px;
   background-color: #fffffa;
+}
+h1 {
+  padding-top: 50px;
+  padding-bottom: 10px;
 }
 
 hr { 
@@ -24,16 +29,16 @@ hr {
 
 button {
   margin-top: 30px;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 15px;
+  border-radius: 3px;
   color: #FFFFF3;
   background-color: #A593E0;
-  box-shadow: 0px 17px 10px -10px #666;
+  /*box-shadow: 0px 17px 10px -10px #666;*/
 }
 
-button:hover {
+/*button:hover {
   box-shadow: 1px 1px 1px 1px #FFFFF3;
-}
+}*/
 
 p {
   font-size: 20px
